@@ -36,6 +36,7 @@
 		53EA6D53184C6E150041DA8A /* FLHFrontView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EA6D52184C6E150041DA8A /* FLHFrontView.m */; };
 		F6E0FBB1184C3D660063E255 /* FLHCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0FBAE184C3D660063E255 /* FLHCard.m */; };
 		F6E0FBB2184C3D660063E255 /* FLHCardSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0FBB0184C3D660063E255 /* FLHCardSet.m */; };
+		F6E0FBC9184D1E000063E255 /* FLHCheckmark.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0FBC8184D1E000063E255 /* FLHCheckmark.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		F6E0FBAE184C3D660063E255 /* FLHCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCard.m; sourceTree = "<group>"; };
 		F6E0FBAF184C3D660063E255 /* FLHCardSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHCardSet.h; sourceTree = "<group>"; };
 		F6E0FBB0184C3D660063E255 /* FLHCardSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCardSet.m; sourceTree = "<group>"; };
+		F6E0FBC7184D1E000063E255 /* FLHCheckmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHCheckmark.h; sourceTree = "<group>"; };
+		F6E0FBC8184D1E000063E255 /* FLHCheckmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCheckmark.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +187,8 @@
 				F6E0FBB0184C3D660063E255 /* FLHCardSet.m */,
 				5338CF10184C315100149F6C /* Images.xcassets */,
 				5338CF05184C315100149F6C /* Supporting Files */,
+				F6E0FBC7184D1E000063E255 /* FLHCheckmark.h */,
+				F6E0FBC8184D1E000063E255 /* FLHCheckmark.m */,
 			);
 			path = "Flash-Me";
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				F6E0FBB2184C3D660063E255 /* FLHCardSet.m in Sources */,
 				53EA6D50184C62C60041DA8A /* FLHQuestionViewController.m in Sources */,
 				5338CF30184C329600149F6C /* FLHCardSetsTableViewController.m in Sources */,
+				F6E0FBC9184D1E000063E255 /* FLHCheckmark.m in Sources */,
 				53386551184D1245001348A8 /* FLHSolutionView.m in Sources */,
 				5338CF0F184C315100149F6C /* FLHAppDelegate.m in Sources */,
 			);

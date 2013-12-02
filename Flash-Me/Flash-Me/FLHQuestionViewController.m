@@ -9,6 +9,7 @@
 #import "FLHQuestionViewController.h"
 #import "FLHFrontView.h"
 #import "FLHSolutionView.h"
+#import "FLHCheckmark.h"
 #import "FLHCard.h"
 
 
@@ -72,7 +73,10 @@
 
 - (void)didSelectCorrectAnswer
 {
-  [self nextCard];
+    [self.view addSubview:[[FLHCheckmark alloc] initWithFrame:self.view.bounds]];
+    //    [UIColor greenColor];
+//    sleep(30000);
+//  [self nextCard];
 }
 
 - (void)viewDidAppear:(BOOL)animated
