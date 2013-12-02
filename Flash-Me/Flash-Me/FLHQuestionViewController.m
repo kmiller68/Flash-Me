@@ -8,11 +8,15 @@
 
 #import "FLHQuestionViewController.h"
 #import "FLHFrontView.h"
+#import "FLHSolutionView.h"
 #import "FLHCard.h"
+
 
 @interface FLHQuestionViewController ()
 
 @property (nonatomic, strong) FLHFrontView* frontView;
+
+@property (nonatomic, strong) FLHSolutionView* solutionView;
 
 @property (nonatomic, strong) FLHCard *curCard;
 
@@ -44,23 +48,32 @@
 
 - (void)nextCard
 {
-  
-  
-  
   self.frontView = [[FLHFrontView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   self.curCard = [self.cardSet.cards objectAtIndex:arc4random_uniform(self.cardSet.cards.count)];
   self.frontView.prompt.text = self.curCard.prompt;
   [self.frontView.butt addTarget:self action:@selector(showAnswer) forControlEvents:UIControlEventTouchUpInside];
   self.view = self.frontView;
-
-  
 }
 
 - (void)showAnswer
 {
-  NSLog(@"woo");
+  self.solutionView = [[FLHSolutionView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.solutionView.solution.text = self.curCard.solution;
+  [self.solutionView.correctButton addTarget:self action:@selector(didSelectCorrectAnswer) forControlEvents:UIControlEventTouchUpInside];
+  [self.solutionView.wrongButton addTarget:self action:@selector(didSelectWrongAnswer) forControlEvents:UIControlEventTouchUpInside];
+  self.view = self.solutionView;
 }
 
+
+- (void)didSelectWrongAnswer
+{
+  [self nextCard];
+}
+
+- (void)didSelectCorrectAnswer
+{
+  [self nextCard];
+}
 
 - (void)viewDidAppear:(BOOL)animated
 {

@@ -33,9 +33,10 @@
       };
       
       self.prompt = [[UILabel alloc] initWithFrame:pFrame];
+      self.prompt.font = [UIFont systemFontOfSize:30.0];
       self.prompt.textAlignment = UITextAlignmentCenter;
       [self addSubview:self.prompt];
-      
+      [self sizeToFit];
       
         // Initialization code
     }

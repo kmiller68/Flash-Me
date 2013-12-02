@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53386551184D1245001348A8 /* FLHSolutionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53386550184D1245001348A8 /* FLHSolutionView.m */; };
 		5338CEFF184C315100149F6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEFE184C315100149F6C /* Foundation.framework */; };
 		5338CF01184C315100149F6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CF00184C315100149F6C /* CoreGraphics.framework */; };
 		5338CF03184C315100149F6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CF02184C315100149F6C /* UIKit.framework */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5338654F184D1245001348A8 /* FLHSolutionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHSolutionView.h; sourceTree = "<group>"; };
+		53386550184D1245001348A8 /* FLHSolutionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHSolutionView.m; sourceTree = "<group>"; };
 		5338CEFB184C315100149F6C /* Flash-Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash-Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5338CEFE184C315100149F6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5338CF00184C315100149F6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,6 +176,8 @@
 				5338CF2D184C329600149F6C /* FLHCardSetsTableViewController.h */,
 				5338CF2E184C329600149F6C /* FLHCardSetsTableViewController.m */,
 				5338CF2F184C329600149F6C /* FLHCardSetsTableViewController.xib */,
+				5338654F184D1245001348A8 /* FLHSolutionView.h */,
+				53386550184D1245001348A8 /* FLHSolutionView.m */,
 				F6E0FBAD184C3D660063E255 /* FLHCard.h */,
 				F6E0FBAE184C3D660063E255 /* FLHCard.m */,
 				F6E0FBAF184C3D660063E255 /* FLHCardSet.h */,
@@ -315,6 +320,7 @@
 				F6E0FBB2184C3D660063E255 /* FLHCardSet.m in Sources */,
 				53EA6D50184C62C60041DA8A /* FLHQuestionViewController.m in Sources */,
 				5338CF30184C329600149F6C /* FLHCardSetsTableViewController.m in Sources */,
+				53386551184D1245001348A8 /* FLHSolutionView.m in Sources */,
 				5338CF0F184C315100149F6C /* FLHAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
