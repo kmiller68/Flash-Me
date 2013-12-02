@@ -94,9 +94,11 @@
     }
     FLHCardSet *cardSet = [self.cardSets objectAtIndex:indexPath.row];
     FLHCard *card = cardSet.cards[0];
-    [card fetch];
-    NSLog(@"prompt:%s, solution:%s", card.prompt.cString, card.solution.cString);
-    cell.textLabel.text = cardSet.name;
+    [card fetchInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        FLHCard *card = (FLHCard *)object;
+        NSLog(@"prompt:%s, solution:%s", card.prompt.cString, card.solution.cString);
+        cell.textLabel.text = cardSet.name;
+    }];
     
     return cell;
 }
