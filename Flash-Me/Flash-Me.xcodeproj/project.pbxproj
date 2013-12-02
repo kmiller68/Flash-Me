@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5338CEA7184C214D00149F6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEA6184C214D00149F6C /* Foundation.framework */; };
+		5338CEA9184C214D00149F6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEA8184C214D00149F6C /* CoreGraphics.framework */; };
+		5338CEAB184C214D00149F6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEAA184C214D00149F6C /* UIKit.framework */; };
+		5338CEB1184C214D00149F6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5338CEAF184C214D00149F6C /* InfoPlist.strings */; };
+		5338CEB3184C214D00149F6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CEB2184C214D00149F6C /* main.m */; };
+		5338CEB7184C214D00149F6C /* MESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CEB6184C214D00149F6C /* MESAppDelegate.m */; };
+		5338CEBA184C214D00149F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5338CEB8184C214D00149F6C /* Main.storyboard */; };
+		5338CEBD184C214D00149F6C /* MESMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CEBC184C214D00149F6C /* MESMasterViewController.m */; };
+		5338CEC0184C214D00149F6C /* MESDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CEBF184C214D00149F6C /* MESDetailViewController.m */; };
+		5338CEC2184C214D00149F6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5338CEC1184C214D00149F6C /* Images.xcassets */; };
+		5338CEC9184C214D00149F6C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEC8184C214D00149F6C /* XCTest.framework */; };
+		5338CECA184C214D00149F6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEA6184C214D00149F6C /* Foundation.framework */; };
+		5338CECB184C214D00149F6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEAA184C214D00149F6C /* UIKit.framework */; };
+		5338CED3184C214D00149F6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5338CED1184C214D00149F6C /* InfoPlist.strings */; };
+		5338CED5184C214D00149F6C /* Flash_MeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CED4184C214D00149F6C /* Flash_MeTests.m */; };
+		5338CEDF184C217400149F6C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEDE184C217400149F6C /* Parse.framework */; };
+		5338CEE1184C21FC00149F6C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEE0184C21FC00149F6C /* AudioToolbox.framework */; };
+		5338CEE3184C220800149F6C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEE2184C220700149F6C /* CFNetwork.framework */; };
+		5338CEE5184C221800149F6C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEE4184C221800149F6C /* CoreLocation.framework */; };
+		5338CEE7184C222200149F6C /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEE6184C222200149F6C /* libz.1.1.3.dylib */; };
+		5338CEE9184C222D00149F6C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEE8184C222D00149F6C /* MobileCoreServices.framework */; };
+		5338CEEB184C223E00149F6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEEA184C223E00149F6C /* QuartzCore.framework */; };
+		5338CEED184C224700149F6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEEC184C224700149F6C /* Security.framework */; };
+		5338CEEF184C225600149F6C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEEE184C225600149F6C /* StoreKit.framework */; };
+		5338CEF1184C226000149F6C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5338CEF0184C226000149F6C /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5338CECC184C214D00149F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5338CE9B184C214D00149F6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5338CEA2184C214D00149F6C;
+			remoteInfo = "Flash-Me";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5338CEA3184C214D00149F6C /* Flash-Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash-Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5338CEA6184C214D00149F6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5338CEA8184C214D00149F6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5338CEAA184C214D00149F6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5338CEAE184C214D00149F6C /* Flash-Me-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flash-Me-Info.plist"; sourceTree = "<group>"; };
+		5338CEB0184C214D00149F6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5338CEB2184C214D00149F6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5338CEB4184C214D00149F6C /* Flash-Me-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flash-Me-Prefix.pch"; sourceTree = "<group>"; };
+		5338CEB5184C214D00149F6C /* MESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MESAppDelegate.h; sourceTree = "<group>"; };
+		5338CEB6184C214D00149F6C /* MESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MESAppDelegate.m; sourceTree = "<group>"; };
+		5338CEB9184C214D00149F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5338CEBB184C214D00149F6C /* MESMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MESMasterViewController.h; sourceTree = "<group>"; };
+		5338CEBC184C214D00149F6C /* MESMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MESMasterViewController.m; sourceTree = "<group>"; };
+		5338CEBE184C214D00149F6C /* MESDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MESDetailViewController.h; sourceTree = "<group>"; };
+		5338CEBF184C214D00149F6C /* MESDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MESDetailViewController.m; sourceTree = "<group>"; };
+		5338CEC1184C214D00149F6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5338CEC7184C214D00149F6C /* Flash-MeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flash-MeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5338CEC8184C214D00149F6C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5338CED0184C214D00149F6C /* Flash-MeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flash-MeTests-Info.plist"; sourceTree = "<group>"; };
+		5338CED2184C214D00149F6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5338CED4184C214D00149F6C /* Flash_MeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flash_MeTests.m; sourceTree = "<group>"; };
+		5338CEDE184C217400149F6C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		5338CEE0184C21FC00149F6C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5338CEE2184C220700149F6C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5338CEE4184C221800149F6C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5338CEE6184C222200149F6C /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		5338CEE8184C222D00149F6C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5338CEEA184C223E00149F6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5338CEEC184C224700149F6C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5338CEEE184C225600149F6C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5338CEF0184C226000149F6C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5338CEA0184C214D00149F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5338CEF1184C226000149F6C /* SystemConfiguration.framework in Frameworks */,
+				5338CEEF184C225600149F6C /* StoreKit.framework in Frameworks */,
+				5338CEED184C224700149F6C /* Security.framework in Frameworks */,
+				5338CEEB184C223E00149F6C /* QuartzCore.framework in Frameworks */,
+				5338CEE9184C222D00149F6C /* MobileCoreServices.framework in Frameworks */,
+				5338CEE7184C222200149F6C /* libz.1.1.3.dylib in Frameworks */,
+				5338CEE5184C221800149F6C /* CoreLocation.framework in Frameworks */,
+				5338CEE3184C220800149F6C /* CFNetwork.framework in Frameworks */,
+				5338CEE1184C21FC00149F6C /* AudioToolbox.framework in Frameworks */,
+				5338CEA9184C214D00149F6C /* CoreGraphics.framework in Frameworks */,
+				5338CEAB184C214D00149F6C /* UIKit.framework in Frameworks */,
+				5338CEDF184C217400149F6C /* Parse.framework in Frameworks */,
+				5338CEA7184C214D00149F6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5338CEC4184C214D00149F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5338CEC9184C214D00149F6C /* XCTest.framework in Frameworks */,
+				5338CECB184C214D00149F6C /* UIKit.framework in Frameworks */,
+				5338CECA184C214D00149F6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5338CE9A184C214D00149F6C = {
+			isa = PBXGroup;
+			children = (
+				5338CEAC184C214D00149F6C /* Flash-Me */,
+				5338CECE184C214D00149F6C /* Flash-MeTests */,
+				5338CEA5184C214D00149F6C /* Frameworks */,
+				5338CEA4184C214D00149F6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5338CEA4184C214D00149F6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5338CEA3184C214D00149F6C /* Flash-Me.app */,
+				5338CEC7184C214D00149F6C /* Flash-MeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5338CEA5184C214D00149F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5338CEF0184C226000149F6C /* SystemConfiguration.framework */,
+				5338CEEE184C225600149F6C /* StoreKit.framework */,
+				5338CEEC184C224700149F6C /* Security.framework */,
+				5338CEEA184C223E00149F6C /* QuartzCore.framework */,
+				5338CEE8184C222D00149F6C /* MobileCoreServices.framework */,
+				5338CEE6184C222200149F6C /* libz.1.1.3.dylib */,
+				5338CEE4184C221800149F6C /* CoreLocation.framework */,
+				5338CEE2184C220700149F6C /* CFNetwork.framework */,
+				5338CEE0184C21FC00149F6C /* AudioToolbox.framework */,
+				5338CEDE184C217400149F6C /* Parse.framework */,
+				5338CEA6184C214D00149F6C /* Foundation.framework */,
+				5338CEA8184C214D00149F6C /* CoreGraphics.framework */,
+				5338CEAA184C214D00149F6C /* UIKit.framework */,
+				5338CEC8184C214D00149F6C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5338CEAC184C214D00149F6C /* Flash-Me */ = {
+			isa = PBXGroup;
+			children = (
+				5338CEB5184C214D00149F6C /* MESAppDelegate.h */,
+				5338CEB6184C214D00149F6C /* MESAppDelegate.m */,
+				5338CEB8184C214D00149F6C /* Main.storyboard */,
+				5338CEBB184C214D00149F6C /* MESMasterViewController.h */,
+				5338CEBC184C214D00149F6C /* MESMasterViewController.m */,
+				5338CEBE184C214D00149F6C /* MESDetailViewController.h */,
+				5338CEBF184C214D00149F6C /* MESDetailViewController.m */,
+				5338CEC1184C214D00149F6C /* Images.xcassets */,
+				5338CEAD184C214D00149F6C /* Supporting Files */,
+			);
+			path = "Flash-Me";
+			sourceTree = "<group>";
+		};
+		5338CEAD184C214D00149F6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5338CEAE184C214D00149F6C /* Flash-Me-Info.plist */,
+				5338CEAF184C214D00149F6C /* InfoPlist.strings */,
+				5338CEB2184C214D00149F6C /* main.m */,
+				5338CEB4184C214D00149F6C /* Flash-Me-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5338CECE184C214D00149F6C /* Flash-MeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5338CED4184C214D00149F6C /* Flash_MeTests.m */,
+				5338CECF184C214D00149F6C /* Supporting Files */,
+			);
+			path = "Flash-MeTests";
+			sourceTree = "<group>";
+		};
+		5338CECF184C214D00149F6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5338CED0184C214D00149F6C /* Flash-MeTests-Info.plist */,
+				5338CED1184C214D00149F6C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5338CEA2184C214D00149F6C /* Flash-Me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5338CED8184C214D00149F6C /* Build configuration list for PBXNativeTarget "Flash-Me" */;
+			buildPhases = (
+				5338CE9F184C214D00149F6C /* Sources */,
+				5338CEA0184C214D00149F6C /* Frameworks */,
+				5338CEA1184C214D00149F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flash-Me";
+			productName = "Flash-Me";
+			productReference = 5338CEA3184C214D00149F6C /* Flash-Me.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5338CEC6184C214D00149F6C /* Flash-MeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5338CEDB184C214D00149F6C /* Build configuration list for PBXNativeTarget "Flash-MeTests" */;
+			buildPhases = (
+				5338CEC3184C214D00149F6C /* Sources */,
+				5338CEC4184C214D00149F6C /* Frameworks */,
+				5338CEC5184C214D00149F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5338CECD184C214D00149F6C /* PBXTargetDependency */,
+			);
+			name = "Flash-MeTests";
+			productName = "Flash-MeTests";
+			productReference = 5338CEC7184C214D00149F6C /* Flash-MeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5338CE9B184C214D00149F6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MES;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = donald.keith;
+				TargetAttributes = {
+					5338CEC6184C214D00149F6C = {
+						TestTargetID = 5338CEA2184C214D00149F6C;
+					};
+				};
+			};
+			buildConfigurationList = 5338CE9E184C214D00149F6C /* Build configuration list for PBXProject "Flash-Me" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5338CE9A184C214D00149F6C;
+			productRefGroup = 5338CEA4184C214D00149F6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5338CEA2184C214D00149F6C /* Flash-Me */,
+				5338CEC6184C214D00149F6C /* Flash-MeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5338CEA1184C214D00149F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5338CEC2184C214D00149F6C /* Images.xcassets in Resources */,
+				5338CEB1184C214D00149F6C /* InfoPlist.strings in Resources */,
+				5338CEBA184C214D00149F6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5338CEC5184C214D00149F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5338CED3184C214D00149F6C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5338CE9F184C214D00149F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5338CEB7184C214D00149F6C /* MESAppDelegate.m in Sources */,
+				5338CEB3184C214D00149F6C /* main.m in Sources */,
+				5338CEBD184C214D00149F6C /* MESMasterViewController.m in Sources */,
+				5338CEC0184C214D00149F6C /* MESDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5338CEC3184C214D00149F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5338CED5184C214D00149F6C /* Flash_MeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5338CECD184C214D00149F6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5338CEA2184C214D00149F6C /* Flash-Me */;
+			targetProxy = 5338CECC184C214D00149F6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5338CEAF184C214D00149F6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5338CEB0184C214D00149F6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5338CEB8184C214D00149F6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5338CEB9184C214D00149F6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5338CED1184C214D00149F6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5338CED2184C214D00149F6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5338CED6184C214D00149F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5338CED7184C214D00149F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5338CED9184C214D00149F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/keith/schoolStuff/cs/iOS/Flash-Me/Flash-Me",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flash-Me/Flash-Me-Prefix.pch";
+				INFOPLIST_FILE = "Flash-Me/Flash-Me-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5338CEDA184C214D00149F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/keith/schoolStuff/cs/iOS/Flash-Me/Flash-Me",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flash-Me/Flash-Me-Prefix.pch";
+				INFOPLIST_FILE = "Flash-Me/Flash-Me-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5338CEDC184C214D00149F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flash-Me.app/Flash-Me";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flash-Me/Flash-Me-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Flash-MeTests/Flash-MeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5338CEDD184C214D00149F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flash-Me.app/Flash-Me";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flash-Me/Flash-Me-Prefix.pch";
+				INFOPLIST_FILE = "Flash-MeTests/Flash-MeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5338CE9E184C214D00149F6C /* Build configuration list for PBXProject "Flash-Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5338CED6184C214D00149F6C /* Debug */,
+				5338CED7184C214D00149F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5338CED8184C214D00149F6C /* Build configuration list for PBXNativeTarget "Flash-Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5338CED9184C214D00149F6C /* Debug */,
+				5338CEDA184C214D00149F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5338CEDB184C214D00149F6C /* Build configuration list for PBXNativeTarget "Flash-MeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5338CEDC184C214D00149F6C /* Debug */,
+				5338CEDD184C214D00149F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5338CE9B184C214D00149F6C /* Project object */;
+}
