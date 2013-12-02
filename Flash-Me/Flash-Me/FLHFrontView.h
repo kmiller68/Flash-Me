@@ -10,4 +10,8 @@
 
 @interface FLHFrontView : UIView
 
+@property (nonatomic, strong) UIButton* butt;
+
+@property (nonatomic, strong) UILabel* prompt;
+
 @end

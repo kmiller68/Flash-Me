@@ -14,7 +14,7 @@
 
 @interface FLHCardSetsTableViewController ()
 
-@property NSArray *cardSets;
+@property (nonatomic, strong) NSArray *cardSets;
 
 @end
 
@@ -38,18 +38,14 @@
   return self;
 }
 
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 
     if (self) {
       self.title = @"Flash Cards";
-      [[FLHCardSet query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if(!error) {
-          self.cardSets = objects;
-          [self.tableView reloadData];
-        }
-      }];
         // Custom initialization
     }
     return self;
@@ -58,7 +54,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    [[FLHCardSet query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+      if(!error) {
+        self.cardSets = objects;
+        [self.tableView reloadData];
+      }
+    }];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -94,12 +95,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     FLHCardSet *cardSet = [self.cardSets objectAtIndex:indexPath.row];
-    FLHCard *card = cardSet.cards[0];
-    [card fetchInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-        FLHCard *card = (FLHCard *)object;
-        NSLog(@"prompt:%s, solution:%s", card.prompt.cString, card.solution.cString);
-        cell.textLabel.text = cardSet.name;
-    }];
+
+  cell.textLabel.text = cardSet.name;
     
     return cell;
 }

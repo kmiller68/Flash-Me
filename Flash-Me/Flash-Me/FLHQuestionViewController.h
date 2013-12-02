@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "FLHCardSet.h"
 
+
 @interface FLHQuestionViewController : UIViewController
 
-@property FLHCardSet* cards;
+@property (nonatomic, strong) FLHCardSet* cardSet;
 
 @end

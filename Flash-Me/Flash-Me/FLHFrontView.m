@@ -12,12 +12,19 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:frame];
+  self = [super initWithFrame:frame];
     if (self) {
+      [self setBackgroundColor:[UIColor whiteColor]];
+      self.butt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+      [self.butt setTitle:@"See Answer" forState:UIControlStateNormal];
+      self.butt.titleLabel.font = [UIFont systemFontOfSize:20.0];
+      [self.butt sizeToFit];
+      [self addSubview:self.butt];
         // Initialization code
     }
     return self;
 }
+
 
 /*
 // Only override drawRect: if you perform custom drawing.
