@@ -7,6 +7,7 @@
 //
 
 #import "FLHCardSetsTableViewController.h"
+#import "FLHQuestionViewController.h"
 #import "FLHCardSet.h"
 #import "FLHCard.h"
 #import <Parse/Parse.h>
@@ -101,9 +102,11 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  
+  FLHQuestionViewController* questionView = [[FLHQuestionViewController alloc] init];
+  questionView.cards = [self.cardSets objectAtIndex:indexPath.row];
+  [self.navigationController pushViewController:questionView animated:YES];
 }
 
 /*

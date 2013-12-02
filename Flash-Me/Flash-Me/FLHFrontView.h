@@ -1,5 +1,5 @@
 //
-//  FLHQuestionViewController.h
+//  FLHFrontView.h
 //  Flash-Me
 //
 //  Created by Keith Miller on 12/2/13.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FLHCardSet.h"
 
-@interface FLHQuestionViewController : UIViewController
-
-@property FLHCardSet* cards;
+@interface FLHFrontView : UIView
 
 @end
