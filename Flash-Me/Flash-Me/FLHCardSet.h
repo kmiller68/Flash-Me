@@ -11,8 +11,8 @@
 
 @interface FLHCardSet : PFObject <PFSubclassing>
 
-@property (strong, nonatomic) NSString *setName;
-//@property (strong, nonatomic) NSString *setName;
+@property (strong, nonatomic) NSString *name;
+
 + (NSString *)parseClassName;
 
 @end

@@ -11,6 +11,9 @@
 
 @implementation FLHCard
 
+@dynamic solution;
+@dynamic prompt;
+
 + (NSString *)parseClassName
 {
     return @"Card";
