@@ -21,9 +21,18 @@
 		5338CF24184C315100149F6C /* Flash_MeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CF23184C315100149F6C /* Flash_MeTests.m */; };
 		5338CF30184C329600149F6C /* FLHCardSetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CF2E184C329600149F6C /* FLHCardSetsTableViewController.m */; };
 		5338CF31184C329600149F6C /* FLHCardSetsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5338CF2F184C329600149F6C /* FLHCardSetsTableViewController.xib */; };
+		53EA6D38184C42180041DA8A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D37184C42180041DA8A /* Parse.framework */; };
+		53EA6D3A184C42A60041DA8A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D39184C42A60041DA8A /* AudioToolbox.framework */; };
+		53EA6D3C184C42AF0041DA8A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D3B184C42AF0041DA8A /* CFNetwork.framework */; };
+		53EA6D3E184C42CB0041DA8A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D3D184C42CB0041DA8A /* CoreLocation.framework */; };
+		53EA6D40184C42D40041DA8A /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D3F184C42D40041DA8A /* libz.1.1.3.dylib */; };
+		53EA6D42184C42DC0041DA8A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D41184C42DC0041DA8A /* MobileCoreServices.framework */; };
+		53EA6D44184C42E50041DA8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D43184C42E50041DA8A /* QuartzCore.framework */; };
+		53EA6D46184C42EE0041DA8A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D45184C42EE0041DA8A /* Security.framework */; };
+		53EA6D48184C42F70041DA8A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D47184C42F70041DA8A /* StoreKit.framework */; };
+		53EA6D4A184C42FF0041DA8A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D49184C42FF0041DA8A /* SystemConfiguration.framework */; };
 		F6E0FBB1184C3D660063E255 /* FLHCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0FBAE184C3D660063E255 /* FLHCard.m */; };
 		F6E0FBB2184C3D660063E255 /* FLHCardSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0FBB0184C3D660063E255 /* FLHCardSet.m */; };
-		F6E0FBB4184C3E330063E255 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E0FBB3184C3E330063E255 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +65,20 @@
 		5338CF2D184C329600149F6C /* FLHCardSetsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHCardSetsTableViewController.h; sourceTree = "<group>"; };
 		5338CF2E184C329600149F6C /* FLHCardSetsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCardSetsTableViewController.m; sourceTree = "<group>"; };
 		5338CF2F184C329600149F6C /* FLHCardSetsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLHCardSetsTableViewController.xib; sourceTree = "<group>"; };
+		53EA6D37184C42180041DA8A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		53EA6D39184C42A60041DA8A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		53EA6D3B184C42AF0041DA8A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		53EA6D3D184C42CB0041DA8A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		53EA6D3F184C42D40041DA8A /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		53EA6D41184C42DC0041DA8A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		53EA6D43184C42E50041DA8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		53EA6D45184C42EE0041DA8A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		53EA6D47184C42F70041DA8A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		53EA6D49184C42FF0041DA8A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F6E0FBAD184C3D660063E255 /* FLHCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHCard.h; sourceTree = "<group>"; };
 		F6E0FBAE184C3D660063E255 /* FLHCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCard.m; sourceTree = "<group>"; };
 		F6E0FBAF184C3D660063E255 /* FLHCardSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHCardSet.h; sourceTree = "<group>"; };
 		F6E0FBB0184C3D660063E255 /* FLHCardSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCardSet.m; sourceTree = "<group>"; };
-		F6E0FBB3184C3E330063E255 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../../../../Downloads/Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +86,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6E0FBB4184C3E330063E255 /* Parse.framework in Frameworks */,
+				53EA6D4A184C42FF0041DA8A /* SystemConfiguration.framework in Frameworks */,
+				53EA6D48184C42F70041DA8A /* StoreKit.framework in Frameworks */,
+				53EA6D46184C42EE0041DA8A /* Security.framework in Frameworks */,
+				53EA6D44184C42E50041DA8A /* QuartzCore.framework in Frameworks */,
+				53EA6D42184C42DC0041DA8A /* MobileCoreServices.framework in Frameworks */,
+				53EA6D40184C42D40041DA8A /* libz.1.1.3.dylib in Frameworks */,
+				53EA6D3E184C42CB0041DA8A /* CoreLocation.framework in Frameworks */,
 				5338CF01184C315100149F6C /* CoreGraphics.framework in Frameworks */,
+				53EA6D3C184C42AF0041DA8A /* CFNetwork.framework in Frameworks */,
+				53EA6D3A184C42A60041DA8A /* AudioToolbox.framework in Frameworks */,
 				5338CF03184C315100149F6C /* UIKit.framework in Frameworks */,
 				5338CEFF184C315100149F6C /* Foundation.framework in Frameworks */,
+				53EA6D38184C42180041DA8A /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +137,16 @@
 		5338CEFD184C315100149F6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6E0FBB3184C3E330063E255 /* Parse.framework */,
+				53EA6D49184C42FF0041DA8A /* SystemConfiguration.framework */,
+				53EA6D47184C42F70041DA8A /* StoreKit.framework */,
+				53EA6D45184C42EE0041DA8A /* Security.framework */,
+				53EA6D43184C42E50041DA8A /* QuartzCore.framework */,
+				53EA6D41184C42DC0041DA8A /* MobileCoreServices.framework */,
+				53EA6D3F184C42D40041DA8A /* libz.1.1.3.dylib */,
+				53EA6D3D184C42CB0041DA8A /* CoreLocation.framework */,
+				53EA6D3B184C42AF0041DA8A /* CFNetwork.framework */,
+				53EA6D39184C42A60041DA8A /* AudioToolbox.framework */,
+				53EA6D37184C42180041DA8A /* Parse.framework */,
 				5338CEFE184C315100149F6C /* Foundation.framework */,
 				5338CF00184C315100149F6C /* CoreGraphics.framework */,
 				5338CF02184C315100149F6C /* UIKit.framework */,
@@ -389,6 +425,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/don/Downloads,
+					"/Users/keith/schoolStuff/cs/iOS/Flash-Me/Flash-Me",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Flash-Me/Flash-Me-Prefix.pch";
@@ -406,6 +443,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/don/Downloads,
+					"/Users/keith/schoolStuff/cs/iOS/Flash-Me/Flash-Me",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Flash-Me/Flash-Me-Prefix.pch";

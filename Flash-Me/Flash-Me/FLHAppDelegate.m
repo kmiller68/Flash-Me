@@ -7,12 +7,16 @@
 //
 
 #import "FLHAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation FLHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [Parse setApplicationId:@"lcl7VyWxUmNifxGgrus5SRSREEDvHbhKa4ZzjrX8"
+                  clientKey:@"itKkyV6R0qtg7qieVrnb3io6IAO1RJe25WpIPFJ0"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
