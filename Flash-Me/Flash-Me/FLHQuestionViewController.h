@@ -12,6 +12,6 @@
 
 @interface FLHQuestionViewController : UIViewController
 
-@property (nonatomic, strong) FLHCardSet* cardSet;
+@property (nonatomic, strong) FLHCardSet *cardSet;
 
 @end

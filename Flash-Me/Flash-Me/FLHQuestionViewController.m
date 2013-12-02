@@ -65,12 +65,10 @@
 
 - (void)viewDidLoad
 {
-  
-  __block FLHCard *card = self.cardSet.cards[0];
-  [card fetchInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-    card = (FLHCard *)object;
-    NSLog(@"prompt:%s, solution:%s", card.prompt.cString, card.solution.cString);
-    self.textLabel.text = self.cardSet.name;
+  [FLHCard fetchAllInBackground:self.cardSet.cards block:^(NSArray *objects, NSError *error) {
+      if (error) {
+          NSLog(@"cardSet fetch failed");
+      }
   }];
   
   [super viewDidLoad];

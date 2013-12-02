@@ -96,7 +96,7 @@
     }
     FLHCardSet *cardSet = [self.cardSets objectAtIndex:indexPath.row];
 
-  cell.textLabel.text = cardSet.name;
+    cell.textLabel.text = cardSet.name;
     
     return cell;
 }
@@ -104,7 +104,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   FLHQuestionViewController* questionView = [[FLHQuestionViewController alloc] init];
-  questionView.cards = [self.cardSets objectAtIndex:indexPath.row];
+  questionView.cardSet = [self.cardSets objectAtIndex:indexPath.row];
   [self.navigationController pushViewController:questionView animated:YES];
 }
 
