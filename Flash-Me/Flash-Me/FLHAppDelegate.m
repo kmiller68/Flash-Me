@@ -23,8 +23,9 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     // Override point for customization after application launch.
-    self.viewController = [[FLHCardSetsTableViewController alloc] initWithNibName:@"FLHCardSetsTableViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+  FLHCardSetsTableViewController* mainTVC = [[FLHCardSetsTableViewController alloc] initWithStyle:UITableViewStylePlain];
+  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainTVC];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }
