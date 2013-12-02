@@ -21,6 +21,7 @@
 }
 
 
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
@@ -42,6 +43,12 @@
     CGPathAddLineToPoint(cp1, NULL, cp2x, cp2y);
     CGPathAddLineToPoint(cp1, NULL, cp3x, cp3y);
     CGContextAddPath(ctx, cp1);
+//    [UIView animateWithDuration:5.0 delay:0.0
+//                        options:UIViewAnimationOptionCurveEaseIn
+//                     animations:^{
+//                         
+//                     }
+//                     completion:nil];
     CGContextStrokePath(ctx);
 }
 
