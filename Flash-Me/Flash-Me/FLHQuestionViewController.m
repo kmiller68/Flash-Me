@@ -11,7 +11,7 @@
 #import "FLHSolutionView.h"
 #import "FLHCheckmark.h"
 #import "FLHCard.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 @interface FLHQuestionViewController ()
 
@@ -46,9 +46,31 @@
   return self;
 }
 
+- (CABasicAnimation *)rotationOutAnimation
+{
+  CABasicAnimation *animation = [CABasicAnimation animation];
+  animation.fromValue = @0;
+  animation.toValue = @(M_PI/2);
+  animation.keyPath = @"transform.rotation.x";
+  animation.duration = .5;
+  animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+  return animation;
+}
+
+- (CABasicAnimation *)rotationInAnimation
+{
+  CABasicAnimation *animation = [CABasicAnimation animation];
+  animation.fromValue = @(M_PI/2);
+  animation.toValue = @0;
+  animation.keyPath = @"transform.rotation.x";
+  animation.duration = .5;
+  animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+  return animation;
+}
 
 - (void)nextCard
 {
+
   self.frontView = [[FLHFrontView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   self.curCard = [self.cardSet.cards objectAtIndex:arc4random_uniform(self.cardSet.cards.count)];
   self.frontView.prompt.text = self.curCard.prompt;
