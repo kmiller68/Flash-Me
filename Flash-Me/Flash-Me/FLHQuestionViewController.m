@@ -68,7 +68,16 @@
 
 - (void)didSelectWrongAnswer
 {
-  [self nextCard];
+    [UIView animateWithDuration:1.0
+                     animations:^{
+                         self.view.backgroundColor = [UIColor redColor];
+                         self.solutionView.solution.textColor = [UIColor redColor];
+                         [self.solutionView.correctButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+                     }
+                     completion:^(BOOL finished) {
+                         self.view.backgroundColor = [UIColor whiteColor];
+                         [self nextCard];
+                     }];
 }
 
 - (void)didSelectCorrectAnswer
