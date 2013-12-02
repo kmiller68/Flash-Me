@@ -20,6 +20,23 @@
       self.butt.titleLabel.font = [UIFont systemFontOfSize:20.0];
       [self.butt sizeToFit];
       [self addSubview:self.butt];
+      self.butt.center = (CGPoint) {
+        .x = CGRectGetMidX(frame),
+        .y = CGRectGetMaxY(frame) - CGRectGetHeight(self.butt.frame)
+      };
+      
+      CGRect pFrame = (CGRect) {
+        .origin = CGPointZero,
+        .size = { .width = CGRectGetWidth(frame),
+                  .height = CGRectGetHeight(frame) - CGRectGetHeight(self.butt.frame)
+        }
+      };
+      
+      self.prompt = [[UILabel alloc] initWithFrame:pFrame];
+      self.prompt.textAlignment = UITextAlignmentCenter;
+      [self addSubview:self.prompt];
+      
+      
         // Initialization code
     }
     return self;

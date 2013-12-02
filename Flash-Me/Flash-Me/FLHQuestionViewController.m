@@ -14,9 +14,8 @@
 
 @property (nonatomic, strong) FLHFrontView* frontView;
 
-@property (nonatomic, strong) FLHCard* curCard;
+@property (nonatomic, strong) FLHCard *curCard;
 
-@property (nonatomic, strong) UIButton* butt;
 
 @end
 
@@ -27,6 +26,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
       self.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+      [self.view setBackgroundColor:[UIColor whiteColor]];
       // Custom initialization
     }
     return self;
@@ -41,44 +41,38 @@
   return self;
 }
 
-- (void)setCards:(FLHCardSet *)cards
-{
-  /*
-  _cards = cards;
-  [self nextCard];
-  */
-}
-
 
 - (void)nextCard
 {
-  /*
-  self.frontView = [[FLHFrontView alloc] initWithFrame:CGRectZero];
-  self.butt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-  [self.butt setTitle:@"See Answer" forState:UIControlStateNormal];
-  self.butt.titleLabel.font = [UIFont systemFontOfSize:20.0];
-  [self.butt sizeToFit];
-  [self.view addSubview:self.butt];
-*/
+  
+  
+  
+  self.frontView = [[FLHFrontView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.curCard = [self.cardSet.cards objectAtIndex:arc4random_uniform(self.cardSet.cards.count)];
+  self.frontView.prompt.text = self.curCard.prompt;
+  [self.frontView.butt addTarget:self action:@selector(showAnswer) forControlEvents:UIControlEventTouchUpInside];
+  self.view = self.frontView;
+
   
 }
 
-- (void)viewDidLoad
+- (void)showAnswer
 {
+  NSLog(@"woo");
+}
+
+
+- (void)viewDidAppear:(BOOL)animated
+{
+  [super viewDidAppear:animated];
   [FLHCard fetchAllInBackground:self.cardSet.cards block:^(NSArray *objects, NSError *error) {
-      if (error) {
-          NSLog(@"cardSet fetch failed");
-      }
+    if (error) {
+      NSLog(@"cardSet fetch failed");
+    }
+    [self nextCard];
   }];
   
-  [super viewDidLoad];
-  self.view.backgroundColor = [UIColor whiteColor];
-  self.butt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-  [self.butt setTitle:@"See Answer" forState:UIControlStateNormal];
-  self.butt.titleLabel.font = [UIFont systemFontOfSize:20.0];
-  [self.butt sizeToFit];
-  self.butt.center = CGPointMake(150, 150);
-  [self.view addSubview:self.butt];
+
 	// Do any additional setup after loading the view.
   
 }
