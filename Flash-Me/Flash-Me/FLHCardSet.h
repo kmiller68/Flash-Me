@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 
-@interface MESCardSet : PFObject <PFSubclassing>
+@interface FLHCardSet : PFObject <PFSubclassing>
 
 @property (strong, nonatomic) NSString *setName;
 //@property (strong, nonatomic) NSString *setName;

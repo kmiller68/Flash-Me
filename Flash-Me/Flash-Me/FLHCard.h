@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface MESCard : PFObject <PFSubclassing>
+@interface FLHCard : PFObject <PFSubclassing>
 
 + (NSString *)parseClassName;
 
