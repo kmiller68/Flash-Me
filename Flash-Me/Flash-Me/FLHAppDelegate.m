@@ -6,8 +6,10 @@
 //  Copyright (c) 2013 donald.keith. All rights reserved.
 //
 
-#import "FLHAppDelegate.h"
 #import <Parse/Parse.h>
+#import "FLHAppDelegate.h"
+#import "FLHCard.h"
+#import "FLHCardSet.h"
 
 @implementation FLHAppDelegate
 
@@ -21,6 +23,12 @@
     self.viewController = [[FLHCardSetsTableViewController alloc] initWithNibName:@"FLHCardSetsTableViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+
+    [FLHCard registerSubclass];
+    [FLHCardSet registerSubclass];
+    NSString *parseAppId = @"OIILMKHvtkWPliTjwdqcDNgUhKhftaX3GY6gEsuD";
+    NSString *parseClientKey = @"FPJ9v2sWN1LBU4qICjMjJY76qijRge3VmhjuqcWP";
+    [Parse setApplicationId:parseAppId clientKey:parseClientKey];
     return YES;
 }
 
