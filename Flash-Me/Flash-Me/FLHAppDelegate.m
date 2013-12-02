@@ -16,19 +16,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [FLHCard registerSubclass];
+    [FLHCardSet registerSubclass];
     [Parse setApplicationId:@"lcl7VyWxUmNifxGgrus5SRSREEDvHbhKa4ZzjrX8"
                   clientKey:@"itKkyV6R0qtg7qieVrnb3io6IAO1RJe25WpIPFJ0"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     // Override point for customization after application launch.
     self.viewController = [[FLHCardSetsTableViewController alloc] initWithNibName:@"FLHCardSetsTableViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-
-    [FLHCard registerSubclass];
-    [FLHCardSet registerSubclass];
-    NSString *parseAppId = @"OIILMKHvtkWPliTjwdqcDNgUhKhftaX3GY6gEsuD";
-    NSString *parseClientKey = @"FPJ9v2sWN1LBU4qICjMjJY76qijRge3VmhjuqcWP";
-    [Parse setApplicationId:parseAppId clientKey:parseClientKey];
     return YES;
 }
 
