@@ -18,7 +18,8 @@
                   clientKey:@"itKkyV6R0qtg7qieVrnb3io6IAO1RJe25WpIPFJ0"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.viewController = [[FLHCardSetsTableViewController alloc] initWithNibName:@"FLHCardSetsTableViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

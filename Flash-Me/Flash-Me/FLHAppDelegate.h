@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FLHCardSetsTableViewController.h"
 
 @interface FLHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) FLHCardSetsTableViewController *viewController;
 
 @end

@@ -22,8 +22,12 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-      [FLHCardSet query];
-      
+      [[FLHCardSet query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if(!error) {
+          self.cardSets = objects;
+          [self.tableView reloadData];
+        }
+      }];
         // Custom initialization
     }
     return self;
@@ -57,7 +61,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return [self.cardSets count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,7 +71,8 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
+  
+    cell.textLabel.text = [self.cardSets objectAtIndex:indexPath.row];
     // Configure the cell...
     
     return cell;
