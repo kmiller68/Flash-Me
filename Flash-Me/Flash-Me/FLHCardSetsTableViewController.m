@@ -8,6 +8,7 @@
 
 #import "FLHCardSetsTableViewController.h"
 #import "FLHCardSet.h"
+#import "FLHCard.h"
 #import <Parse/Parse.h>
 
 @interface FLHCardSetsTableViewController ()
@@ -73,8 +74,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     FLHCardSet *cardSet = [self.cardSets objectAtIndex:indexPath.row];
+    FLHCard *card = cardSet.cards[0];
+    [card fetch];
+    NSLog(@"prompt:%s, solution:%s", card.prompt.cString, card.solution.cString);
     cell.textLabel.text = cardSet.name;
-    // Configure the cell...
     
     return cell;
 }
