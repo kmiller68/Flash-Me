@@ -12,6 +12,7 @@
 @implementation FLHCardSet
 
 @dynamic name;
+@dynamic cards;
 
 + (NSString *)parseClassName
 {

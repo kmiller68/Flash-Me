@@ -12,6 +12,7 @@
 @interface FLHCardSet : PFObject <PFSubclassing>
 
 @property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSArray *cards;
 
 + (NSString *)parseClassName;
 
