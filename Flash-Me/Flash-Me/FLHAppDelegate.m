@@ -18,8 +18,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [FLHCard registerSubclass];
     [FLHCardSet registerSubclass];
-    [Parse setApplicationId:@"lcl7VyWxUmNifxGgrus5SRSREEDvHbhKa4ZzjrX8"
-                  clientKey:@"itKkyV6R0qtg7qieVrnb3io6IAO1RJe25WpIPFJ0"];
+    [Parse setApplicationId:@"JHoEc400ZUNMeVPczL4mnb02w7pwn6VVJBNeGGmF"
+                  clientKey:@"jXnNfEWJa7fhjRNMOukw3L2rG5LDOltheAvaapQU"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     // Override point for customization after application launch.
