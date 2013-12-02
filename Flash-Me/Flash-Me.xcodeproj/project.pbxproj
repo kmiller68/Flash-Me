@@ -21,6 +21,9 @@
 		5338CF24184C315100149F6C /* Flash_MeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CF23184C315100149F6C /* Flash_MeTests.m */; };
 		5338CF30184C329600149F6C /* FLHCardSetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CF2E184C329600149F6C /* FLHCardSetsTableViewController.m */; };
 		5338CF31184C329600149F6C /* FLHCardSetsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5338CF2F184C329600149F6C /* FLHCardSetsTableViewController.xib */; };
+		F6E0FBB1184C3D660063E255 /* FLHCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0FBAE184C3D660063E255 /* FLHCard.m */; };
+		F6E0FBB2184C3D660063E255 /* FLHCardSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0FBB0184C3D660063E255 /* FLHCardSet.m */; };
+		F6E0FBB4184C3E330063E255 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E0FBB3184C3E330063E255 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		5338CF2D184C329600149F6C /* FLHCardSetsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHCardSetsTableViewController.h; sourceTree = "<group>"; };
 		5338CF2E184C329600149F6C /* FLHCardSetsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCardSetsTableViewController.m; sourceTree = "<group>"; };
 		5338CF2F184C329600149F6C /* FLHCardSetsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLHCardSetsTableViewController.xib; sourceTree = "<group>"; };
+		F6E0FBAD184C3D660063E255 /* FLHCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHCard.h; sourceTree = "<group>"; };
+		F6E0FBAE184C3D660063E255 /* FLHCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCard.m; sourceTree = "<group>"; };
+		F6E0FBAF184C3D660063E255 /* FLHCardSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHCardSet.h; sourceTree = "<group>"; };
+		F6E0FBB0184C3D660063E255 /* FLHCardSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCardSet.m; sourceTree = "<group>"; };
+		F6E0FBB3184C3E330063E255 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../../../../Downloads/Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E0FBB4184C3E330063E255 /* Parse.framework in Frameworks */,
 				5338CF01184C315100149F6C /* CoreGraphics.framework in Frameworks */,
 				5338CF03184C315100149F6C /* UIKit.framework in Frameworks */,
 				5338CEFF184C315100149F6C /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		5338CEFD184C315100149F6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6E0FBB3184C3E330063E255 /* Parse.framework */,
 				5338CEFE184C315100149F6C /* Foundation.framework */,
 				5338CF00184C315100149F6C /* CoreGraphics.framework */,
 				5338CF02184C315100149F6C /* UIKit.framework */,
@@ -117,6 +127,10 @@
 				5338CF2D184C329600149F6C /* FLHCardSetsTableViewController.h */,
 				5338CF2E184C329600149F6C /* FLHCardSetsTableViewController.m */,
 				5338CF2F184C329600149F6C /* FLHCardSetsTableViewController.xib */,
+				F6E0FBAD184C3D660063E255 /* FLHCard.h */,
+				F6E0FBAE184C3D660063E255 /* FLHCard.m */,
+				F6E0FBAF184C3D660063E255 /* FLHCardSet.h */,
+				F6E0FBB0184C3D660063E255 /* FLHCardSet.m */,
 				5338CF10184C315100149F6C /* Images.xcassets */,
 				5338CF05184C315100149F6C /* Supporting Files */,
 			);
@@ -249,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E0FBB1184C3D660063E255 /* FLHCard.m in Sources */,
 				5338CF0B184C315100149F6C /* main.m in Sources */,
+				F6E0FBB2184C3D660063E255 /* FLHCardSet.m in Sources */,
 				5338CF30184C329600149F6C /* FLHCardSetsTableViewController.m in Sources */,
 				5338CF0F184C315100149F6C /* FLHAppDelegate.m in Sources */,
 			);
@@ -370,6 +386,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/don/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Flash-Me/Flash-Me-Prefix.pch";
 				INFOPLIST_FILE = "Flash-Me/Flash-Me-Info.plist";
@@ -383,6 +403,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/don/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Flash-Me/Flash-Me-Prefix.pch";
 				INFOPLIST_FILE = "Flash-Me/Flash-Me-Info.plist";
@@ -452,6 +476,7 @@
 				5338CF29184C315100149F6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5338CF2A184C315100149F6C /* Build configuration list for PBXNativeTarget "Flash-MeTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +485,7 @@
 				5338CF2C184C315100149F6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
