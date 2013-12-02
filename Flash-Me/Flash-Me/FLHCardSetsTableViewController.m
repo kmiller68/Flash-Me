@@ -18,9 +18,9 @@
 
 @implementation FLHCardSetsTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
       [[FLHCardSet query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if(!error) {
@@ -76,6 +76,11 @@
     // Configure the cell...
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  
 }
 
 /*
