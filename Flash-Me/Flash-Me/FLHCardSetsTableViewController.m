@@ -72,8 +72,8 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-  
-    cell.textLabel.text = [self.cardSets objectAtIndex:indexPath.row];
+    FLHCardSet *cardSet = [self.cardSets objectAtIndex:indexPath.row];
+    cell.textLabel.text = cardSet.name;
     // Configure the cell...
     
     return cell;
