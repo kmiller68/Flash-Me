@@ -8,6 +8,7 @@
 
 #import "FLHCardSetsTableViewController.h"
 #import "FLHQuestionViewController.h"
+#import "FLHNewCardViewController.h"
 #import "FLHCardSet.h"
 #import "FLHCard.h"
 #import <Parse/Parse.h>
@@ -26,13 +27,14 @@
   self = [super initWithStyle:style];
   
   if (self) {
-    self.title = @"Flash Cards";
     [[FLHCardSet query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
       if(!error) {
         self.cardSets = objects;
         [self.tableView reloadData];
       }
     }];
+    
+    
     // Custom initialization
   }
   return self;
@@ -46,25 +48,37 @@
 
     if (self) {
       self.title = @"Flash Cards";
-        // Custom initialization
+
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    [[FLHCardSet query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-      if(!error) {
-        self.cardSets = objects;
-        [self.tableView reloadData];
-      }
-    }];
+  [super viewDidLoad];
+  self.title = @"Flash Cards";
+  [[FLHCardSet query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    if(!error) {
+      self.cardSets = objects;
+      [self.tableView reloadData];
+    }
+  }];
+  
+  UIBarButtonItem *newCardsButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newCards)];
+  self.navigationItem.rightBarButtonItem = newCardsButton;
+  self.navigationItem.leftBarButtonItem = self.editButtonItem;
+  self.tableView.allowsSelectionDuringEditing = YES;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void) newCards
+{
+  FLHNewCardViewController* newCardView = [[FLHNewCardViewController alloc] init];
+  [self.navigationController pushViewController:newCardView animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -103,9 +117,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  FLHQuestionViewController* questionView = [[FLHQuestionViewController alloc] init];
-  questionView.cardSet = [self.cardSets objectAtIndex:indexPath.row];
-  [self.navigationController pushViewController:questionView animated:YES];
+  
+  if(self.editing) {
+    
+  }
+  else {
+    FLHQuestionViewController* questionView = [[FLHQuestionViewController alloc] init];
+    questionView.cardSet = [self.cardSets objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:questionView animated:YES];
+  }
 }
 
 /*

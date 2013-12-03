@@ -22,6 +22,7 @@
 		5338CF24184C315100149F6C /* Flash_MeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CF23184C315100149F6C /* Flash_MeTests.m */; };
 		5338CF30184C329600149F6C /* FLHCardSetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5338CF2E184C329600149F6C /* FLHCardSetsTableViewController.m */; };
 		5338CF31184C329600149F6C /* FLHCardSetsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5338CF2F184C329600149F6C /* FLHCardSetsTableViewController.xib */; };
+		53E87112184E77A1000BB161 /* FLHNewCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E87111184E77A1000BB161 /* FLHNewCardViewController.m */; };
 		53EA6D38184C42180041DA8A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D37184C42180041DA8A /* Parse.framework */; };
 		53EA6D3A184C42A60041DA8A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D39184C42A60041DA8A /* AudioToolbox.framework */; };
 		53EA6D3C184C42AF0041DA8A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA6D3B184C42AF0041DA8A /* CFNetwork.framework */; };
@@ -71,6 +72,8 @@
 		5338CF2D184C329600149F6C /* FLHCardSetsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHCardSetsTableViewController.h; sourceTree = "<group>"; };
 		5338CF2E184C329600149F6C /* FLHCardSetsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHCardSetsTableViewController.m; sourceTree = "<group>"; };
 		5338CF2F184C329600149F6C /* FLHCardSetsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLHCardSetsTableViewController.xib; sourceTree = "<group>"; };
+		53E87110184E77A1000BB161 /* FLHNewCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLHNewCardViewController.h; sourceTree = "<group>"; };
+		53E87111184E77A1000BB161 /* FLHNewCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLHNewCardViewController.m; sourceTree = "<group>"; };
 		53EA6D37184C42180041DA8A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		53EA6D39184C42A60041DA8A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		53EA6D3B184C42AF0041DA8A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -170,6 +173,8 @@
 		5338CF04184C315100149F6C /* Flash-Me */ = {
 			isa = PBXGroup;
 			children = (
+				F6E0FBC7184D1E000063E255 /* FLHCheckmark.h */,
+				F6E0FBC8184D1E000063E255 /* FLHCheckmark.m */,
 				5338CF0D184C315100149F6C /* FLHAppDelegate.h */,
 				5338CF0E184C315100149F6C /* FLHAppDelegate.m */,
 				53EA6D51184C6E150041DA8A /* FLHFrontView.h */,
@@ -179,6 +184,8 @@
 				5338CF2D184C329600149F6C /* FLHCardSetsTableViewController.h */,
 				5338CF2E184C329600149F6C /* FLHCardSetsTableViewController.m */,
 				5338CF2F184C329600149F6C /* FLHCardSetsTableViewController.xib */,
+				53E87110184E77A1000BB161 /* FLHNewCardViewController.h */,
+				53E87111184E77A1000BB161 /* FLHNewCardViewController.m */,
 				5338654F184D1245001348A8 /* FLHSolutionView.h */,
 				53386550184D1245001348A8 /* FLHSolutionView.m */,
 				F6E0FBAD184C3D660063E255 /* FLHCard.h */,
@@ -187,8 +194,6 @@
 				F6E0FBB0184C3D660063E255 /* FLHCardSet.m */,
 				5338CF10184C315100149F6C /* Images.xcassets */,
 				5338CF05184C315100149F6C /* Supporting Files */,
-				F6E0FBC7184D1E000063E255 /* FLHCheckmark.h */,
-				F6E0FBC8184D1E000063E255 /* FLHCheckmark.m */,
 			);
 			path = "Flash-Me";
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 			files = (
 				F6E0FBB1184C3D660063E255 /* FLHCard.m in Sources */,
 				53EA6D53184C6E150041DA8A /* FLHFrontView.m in Sources */,
+				53E87112184E77A1000BB161 /* FLHNewCardViewController.m in Sources */,
 				5338CF0B184C315100149F6C /* main.m in Sources */,
 				F6E0FBB2184C3D660063E255 /* FLHCardSet.m in Sources */,
 				53EA6D50184C62C60041DA8A /* FLHQuestionViewController.m in Sources */,
