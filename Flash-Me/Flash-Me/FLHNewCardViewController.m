@@ -45,9 +45,8 @@
   self.navigationItem.rightBarButtonItem = createButton;
   
   CGRect frame = [[UIScreen mainScreen] bounds];
-  CGRect pLabelframe = 
-  
-  self.prompt = [[UITextfield alloc] initWithFrame:<#(CGRect)#>]
+
+
   
 	// Do any additional setup after loading the view.
 }
